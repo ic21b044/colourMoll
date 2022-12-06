@@ -11,7 +11,15 @@ public class colourTest {
 
     /*Initial Test*/
     @Test
-    void testDefaultState() {
-        //assertNull(null, colourService.getColour());
+    void testgetComp() {
+        String testcolour = clrTest.getComColour("red");
+        testcolour.equals("green");
     }
+
+    @Test
+    void testgetcolour() {
+        String testcolour = clrTest.getColour("red");
+        testcolour.equals("red");
+    }
+
 }
