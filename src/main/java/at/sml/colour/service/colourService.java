@@ -13,6 +13,30 @@ public class colourService {
     colour clr5 = new colour("yellow", "purple");
     colour clr6 = new colour("purple", "yellow");
 
+    public String getColour(String colour)
+    {
+        if(colour.equals("red")) {
+            return clr.getColour();
+        }
+        else if (colour.equals("green")) {
+            return clr2.getColour();
+        }
+        else if (colour.equals("orange")) {
+            return clr3.getColour();
+        }
+        else if (colour.equals("blue")) {
+            return clr4.getColour();
+        }
+        else if (colour.equals("yellow")) {
+            return clr5.getColour();
+        }
+        else if (colour.equals("purple")) {
+            return clr6.getColour();
+        }
+        else {
+            return "error please use right colour";
+        }
+    }
 
     public String getComColour(String colour) {
 
