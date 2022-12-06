@@ -24,7 +24,7 @@ public class colourController {
     @GetMapping("/colour/{colour}")
     @ResponseBody
     String addToSum(@PathVariable String colour) {
-        return clrService.toString();
+        return clrService.getComColour(colour);
     }
 
 }
